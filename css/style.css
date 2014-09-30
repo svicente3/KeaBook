@@ -1,0 +1,235 @@
+.navbar-nav{
+   float: none;
+}
+.text-center{
+   margin-bottom: 20px;
+}
+#posts{
+	list-style-type:none;
+	padding-left: 0;
+	float: left;
+	position: relative;
+}
+li.singlePost.jumbotron {
+	padding-top: 35px;
+	position: relative;
+	float: left;
+	width: 100%;
+}
+#newPost button.btn.btn-primary.btn-lg,
+.btnNewComment {
+	padding: 5px 7px;
+	font-size: 15px;
+	float: right;
+	margin: 10px;
+}
+#newPost{
+	height: 260px;
+}
+input#inputPostContent{
+	height: 80px;
+}
+.postActions{
+	margin-top: 10px;
+}
+span.deletePost {
+	float: right;
+	margin: -18px -41px;
+}
+span.commentPost{
+	float: left;
+	margin-top: 9px;
+	font-size: 18px;
+}
+p.commentsNum{
+	font-size: 13px;
+	margin-bottom: 0;
+	float: left;
+	margin-top: 14px;
+	margin-left: 6px;
+	font-weight: lighter;
+}
+.comments{
+	list-style-type: none;
+	padding-left: 0;
+	margin-top: 10px;
+	float: left;
+	width: 100%;
+}
+li.singleComment{
+	background-color: gainsboro;
+	padding: 15px 25px;
+	border-radius: 5px;
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
+}
+p.commentContent{
+	font-size: 15px;
+	float: left;
+}
+p.commentAuthor{
+	font-size: 14px;
+	font-weight: 500;
+	margin-bottom: 0px;
+}
+p.commentDate{
+	font-size: 12px;
+}
+.commentInfo{
+	float: right;
+	text-align: right;
+}
+body{
+	background-image: url("images/background.jpg");
+}
+.keabookPage .jumbotron{
+	background: rgba(255,255,255,0.6);
+	margin-top: 40px;
+}
+#homeProfile img{
+	float: left;
+}
+#homeProfile .homeProfileInfo{
+	float: left;
+	margin-left: 20px;
+}
+#homeProfile .homeProfileInfo p{
+	margin: 0;
+}
+#homeProfile .homeProfileInfo p.homeName{
+	font-size: 25px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+#homeProfile .homeProfileInfo p.homeMessages,
+#homeProfile .homeProfileInfo p.homePosts{
+	font-size: 15px;
+}
+#homeProfile .today{
+	float: right;
+	font-weight: lighter;
+}
+.lastestInfo #lastestPosts{
+	float: left;
+	width: 49%;
+}
+.lastestInfo #lastestPosts ul.lastestPosts{
+	list-style-type: none;
+	padding: 0;
+	margin-top: 20px;
+}
+.lastestInfo #lastestMessages{
+	float: right;
+	width: 45%;
+	min-height: 255px;
+}
+.lastestInfo #lastestUsers{
+	float: right;
+	width: 45%;
+}
+.lastestInfo #lastestUsers h3{
+	float: right;
+}
+.lastestInfo #lastestUsers ul{
+	list-style-type: none;
+	float: right;
+}
+.lastestInfo #lastestUsers ul .lastUser{
+	float: left;
+	width: 100px;
+	text-align: center;
+	margin: 10px 0 10px 40px;
+}
+.lastestInfo #lastestUsers ul .lastUser img{
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.lastestInfo #lastestUsers ul .lastUser p{
+	margin: 0;
+}
+span.seePosts{
+	float: left;
+	margin-top: 9px;
+	font-size: 18px;
+}
+span.deleteComment{
+	margin: -10px -18px;
+	font-size: 10px;
+	float: right;
+}
+#userFile{
+	width: 60%;
+	margin: auto;
+	text-align: center;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+#userFile img{
+	width: 200px;
+}
+#userFile #infoFile{
+	margin-top: 40px;
+}
+#userFile .editUser{
+	float: right;
+	margin: -30px -40px;
+}
+.singleFile input{
+	width: 60%;
+	margin: auto;
+	font-size: 21px;
+	text-align: center;
+}
+#saveUserChanges{
+	margin-bottom: 25px;
+}
+span.replyMsg,
+span.backMsg{
+	float: right;
+	margin-top: -22px;
+}
+.unread{
+	background: rgba(255,255,255,0.6);
+}
+#friends{
+	list-style-type: none;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+#friends h3{
+	margin-bottom: 20px;
+}
+#friends .singleFriend{
+	margin-top: 10px;
+	margin-bottom: 15px;
+	background-color: #eee;
+	background: rgba(255,255,255,0.6);
+	padding: 25px;
+	border-radius: 8px;
+	width: 45%;
+	margin-right: 40px;
+}
+#friends .singleFriend span.denyRequest{
+	float: right;
+	margin-top: -15px;
+	margin-right: -12px;
+	opacity: 0.7;
+}
+#friends img{
+	float: left;
+}
+#friends .friendInfo{
+	float: left;
+	margin-left: 15px;
+	margin-top: 15px;
+}
+span.addFriend{
+	margin-top: 31px;
+	margin-left: 20px;
+}
+#inputMessageTo, 
+#inputEmailReply{
+	font-size: 13px;
+}
