@@ -233,3 +233,31 @@ span.addFriend{
 #inputEmailReply{
 	font-size: 13px;
 }
+span.seeLikes,
+span.seePostLikes {
+	float: left;
+	margin-top: 10px;
+	font-size: 18px;
+	margin-left: 25px;
+}
+p.likesNum {
+	font-size: 13px;
+	margin-bottom: 0;
+	float: left;
+	margin-top: 14px;
+	margin-left: 6px;
+	font-weight: lighter;
+}
+ul.likes li{
+	float: left;
+	margin-right: 18px;
+}
+ul.likes {
+	list-style-type: none;
+	background-color: gainsboro;
+	padding: 15px 25px;
+	border-radius: 5px;
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+}

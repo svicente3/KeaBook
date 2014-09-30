@@ -11,10 +11,10 @@ if(localStorage.aPosts){
 	posts= JSON.parse(localStorage.aPosts);
 }
 else{
-	var posts = [{ "postID":"0", "postAuthor":"Sara Vicente", "postTitle":"Keabook: the best network ever!", "postContent":"Keabook is the newest and coolest network you'll ever see and now you are part of its community! Welcome!", "comments":[{ "commentID":"0", "commentAuthor":"Lluis Corominas", "commentContent":"This is the best comment ever!", "commentDate":"18/09/2014"},{ "commentID":"1", "commentAuthor":"Erola Serra", "commentContent":"This network is great!", "commentDate":"8/09/2014"}], "postDate":"01/09/2014"},
-			 { "postID":"1", "postAuthor":"Jordi Marquez", "postTitle":"New networks comming", "postContent":"This year we are expecting so many new networks! We'll se what we have.", "comments":[{ "commentID":"0", "commentAuthor":"Mireia Casajuana", "commentContent":"I've also hear about it!", "commentDate":"8/09/2014"}], "postDate":"08/09/2014"},
-			 { "postID":"2", "postAuthor":"Lluis Corominas", "postTitle":"New post!!", "postContent":"This is the coolest post ever!", "comments":[{ "commentID":"0", "commentAuthor":"Mireia Casajuana", "commentContent":"No it's not!", "commentDate":"8/09/2014"}], "postDate":"07/09/2014"},
-			 { "postID":"3", "postAuthor":"Erola Serra", "postTitle":"No comments", "postContent":"This is to test", "comments":[], "postDate":"07/09/2014"}    	
+	var posts = [{ "postID":"0", "postAuthor":"Sara Vicente", "postTitle":"Keabook: the best network ever!", "postContent":"Keabook is the newest and coolest network you'll ever see and now you are part of its community! Welcome!", "comments":[{ "commentID":"0", "commentAuthor":"Adrià Verdaguer", "commentContent":"This is the best comment ever!", "commentDate":"18/09/2014"},{ "commentID":"1", "commentAuthor":"Erola Serra", "commentContent":"This network is great!", "commentDate":"8/09/2014"}], "postDate":"01/09/2014", 'likes':['Adrià Verdaguer', 'Jordi Marquez']},
+			 { "postID":"1", "postAuthor":"Jordi Marquez", "postTitle":"New networks comming", "postContent":"This year we are expecting so many new networks! We'll se what we have.", "comments":[{ "commentID":"0", "commentAuthor":"Mireia Casajuana", "commentContent":"I've also hear about it!", "commentDate":"8/09/2014"}], "postDate":"08/09/2014", 'likes':[]},
+			 { "postID":"2", "postAuthor":"Adrià Verdaguer", "postTitle":"New post!!", "postContent":"This is the coolest post ever!", "comments":[{ "commentID":"0", "commentAuthor":"Mireia Casajuana", "commentContent":"No it's not!", "commentDate":"8/09/2014"}], "postDate":"07/09/2014", 'likes':[]},
+			 { "postID":"3", "postAuthor":"Erola Serra", "postTitle":"No comments", "postContent":"This is to test", "comments":[], "postDate":"07/09/2014", 'likes':[]}    	
  			];
  	localStorage.aPosts = JSON.stringify(posts);
 }
@@ -23,11 +23,11 @@ if(localStorage.aUsers){
 	users= JSON.parse(localStorage.aUsers);
 }
 else{
-	users=[ {"id": "0", "name":"Sara", "lastname":"Vicente", "birthday":"01/04/1992", "country":"Catalonia", "email":"saravicentejimenez@gmail.com", "password": "asd", "messages":[ {"from":"KeaBook", "emailFrom":"KeaBook System", "subject":"Welcome to Keabook!", "content":"We are really happy to have you as a new member of our community. If you have any doubt don't hesitate to ask us. Thank you very much, KeaBook Team.", "read":"yes"}], "friends":[{ 'friendID':'1' , 'friendName':'Lluis Corominas', 'friendEmail':'lluis@kea.dk', 'request':'pendent'}, {'friendID':'4' , 'friendName':'Erola Serra', 'friendEmail':'erola@kea.dk', 'request':'accepted'}], "role": "admin", "status":"active"},
-			{"id": "1", "name":"Lluis", "lastname":"Corominas", "birthday":"16", "country":"Catalonia", "email":"lluis@kea.dk", "password": "asd", "messages":[{"from":"KeaBook", "emailFrom":"KeaBook System", "subject":"Welcome to Keabook!", "content":"We are really happy to have you as a new member of our community. If you have any doubt don't hesitate to ask us. Thank you very much, KeaBook Team.", "read":"yes"},{"from":"Sara Vicente", "emailFrom":"saravicentejimenez@gmail.com", "subject":"Urgent", "content":"Don't forget to bring the laptop!", "read":"no"}], "friends":[{'friendID':'0' , 'friendName':'Sara Vicente', 'friendEmail':'saravicentejimenez@gmail.com', 'request':'pendent'},{'friendID':'4' , 'friendName':'Erola Serra', 'friendEmail': 'erola@kea.dk', 'request':'accepted'}], "role": "user", "status":"active" },
+	users=[ {"id": "0", "name":"Sara", "lastname":"Vicente", "birthday":"01/04/1992", "country":"Catalonia", "email":"saravicentejimenez@gmail.com", "password": "asd", "messages":[ {"from":"KeaBook", "emailFrom":"KeaBook System", "subject":"Welcome to Keabook!", "content":"We are really happy to have you as a new member of our community. If you have any doubt don't hesitate to ask us. Thank you very much, KeaBook Team.", "read":"yes"}], "friends":[{ 'friendID':'1' , 'friendName':'Adrià Verdaguer', 'friendEmail':'adriaverdaguer@gmail.com', 'request':'pendent'}, {'friendID':'4' , 'friendName':'Erola Serra', 'friendEmail':'erola@kea.dk', 'request':'accepted'}], "role": "admin", "status":"active"},
+			{"id": "1", "name":"Adrià", "lastname":"Verdaguer", "birthday":"16/09/1989", "country":"Catalonia", "email":"adriaverdaguer@gmail.com", "password": "asd", "messages":[{"from":"KeaBook", "emailFrom":"KeaBook System", "subject":"Welcome to Keabook!", "content":"We are really happy to have you as a new member of our community. If you have any doubt don't hesitate to ask us. Thank you very much, KeaBook Team.", "read":"yes"},{"from":"Sara Vicente", "emailFrom":"saravicentejimenez@gmail.com", "subject":"Urgent", "content":"Don't forget to bring the laptop!", "read":"no"}], "friends":[{'friendID':'0' , 'friendName':'Sara Vicente', 'friendEmail':'saravicentejimenez@gmail.com', 'request':'pendent'},{'friendID':'4' , 'friendName':'Erola Serra', 'friendEmail': 'erola@kea.dk', 'request':'accepted'}], "role": "user", "status":"active" },
 			{"id": "2", "name":"Andrea", "lastname":"Del Rio", "birthday":"18", "country":"Catalonia", "email":"andrea@kea.dk", "password": "asd", "messages":[{"from":"KeaBook", "emailFrom":"KeaBook System", "subject":"Welcome to Keabook!", "content":"We are really happy to have you as a new member of our community. If you have any doubt don't hesitate to ask us. Thank you very much, KeaBook Team.", "read":"yes"}], "friends":[], "role": "user", "status":"active"},
 			{"id": "3", "name":"Jordi", "lastname":"Marquez", "birthday":"21", "country":"Catalonia", "email":"jordimarquez@gmail.com", "password": "asd", "messages":[{"from":"KeaBook", "emailFrom":"KeaBook System", "subject":"Welcome to Keabook!", "content":"We are really happy to have you as a new member of our community. If you have any doubt don't hesitate to ask us. Thank you very much, KeaBook Team.", "read":"yes"}], "friends":[], "role": "user", "status":"active"},
-			{"id": "4", "name":"Erola", "lastname":"Serra", "birthday":"30", "country":"France", "email":"erola@kea.dk", "password": "asd", "messages":[{"from":"KeaBook", "emailFrom":"KeaBook System", "subject":"Welcome to Keabook!", "content":"We are really happy to have you as a new member of our community. If you have any doubt don't hesitate to ask us. Thank you very much, KeaBook Team.", "read":"yes"}], "friends":[{'friendID':'0' , 'friendName':'Sara Vicente', 'friendEmail':'saravicentejimenez@gmail.com', 'request':'accepted'}, {'friendID':'1' , 'friendName':'Lluis Corominas', 'friendEmail':'lluis@kea.dk', 'request':'accepted'}], "role": "user", "status":"blocked"},
+			{"id": "4", "name":"Erola", "lastname":"Serra", "birthday":"30", "country":"France", "email":"erola@kea.dk", "password": "asd", "messages":[{"from":"KeaBook", "emailFrom":"KeaBook System", "subject":"Welcome to Keabook!", "content":"We are really happy to have you as a new member of our community. If you have any doubt don't hesitate to ask us. Thank you very much, KeaBook Team.", "read":"yes"}], "friends":[{'friendID':'0' , 'friendName':'Sara Vicente', 'friendEmail':'saravicentejimenez@gmail.com', 'request':'accepted'}, {'friendID':'1' , 'friendName':'Adrià Verdaguer', 'friendEmail':'adriaverdaguer@gmail.com', 'request':'accepted'}], "role": "user", "status":"blocked"},
 			{"id": "5", "name":"Mireia", "lastname":"Casajuana", "birthday":"04", "country":"England", "email":"mireia@kea.dk", "password": "asd", "messages":[{"from":"KeaBook", "emailFrom":"KeaBook System", "subject":"Welcome to Keabook!", "content":"We are really happy to have you as a new member of our community. If you have any doubt don't hesitate to ask us. Thank you very much, KeaBook Team.", "read":"yes"}], "friends":[], "role": "user", "status":"blocked"}
 			];
 	localStorage.aUsers = JSON.stringify(users);
@@ -220,7 +220,7 @@ function startUser(){
 				cross = '<span class="deletePost glyphicon glyphicon-remove" data-deletePost="'+posts[p].postID+'"></span>';
 			}
 		}
-		$("ul.lastestPosts").prepend('<li id="'+posts[p].postID+'" class="singlePost jumbotron">'+cross+'<h4 class="postTitle">'+posts[p].postTitle+'</h4><div class="postContent">'+posts[p].postContent+'</div><div class="postActions"><span class="seePosts glyphicon glyphicon-log-in" data-postid="'+posts[p].postID+'"></span><p class="commentsNum">See '+posts[p].comments.length+' comments</p><h5 style="float:right" class="postFrom">'+author+'</h5></div></li>');
+		$("ul.lastestPosts").prepend('<li id="'+posts[p].postID+'" class="singlePost jumbotron">'+cross+'<h4 class="postTitle">'+posts[p].postTitle+'</h4><div class="postContent">'+posts[p].postContent+'</div><div class="postActions"><span class="seePosts glyphicon glyphicon-log-in" data-postid="'+posts[p].postID+'"></span><p class="commentsNum">See '+posts[p].comments.length+' comments</p><span class="seePostLikes glyphicon glyphicon-hand-right" data-postid="'+posts[p].postID+'"></span><p class="likesNum">See '+posts[p].likes.length+' likes</p><h5 style="float:right" class="postFrom">'+author+'</h5></div></li>');
 	}
 	//Lastest user messages
 	var messagesShown=4;
@@ -247,6 +247,7 @@ function startUser(){
     for(var p=0; p<posts.length; p++){
     	var author = posts[p].postAuthor ;
 		var cross = ' ';
+		var hand = '<li><span class="likePost glyphicon glyphicon-thumbs-up" data-indexpostidlike="'+p+'"></span></li>';
 		//If the user logged is an admin
 		if(users[indexCurrentUser].role == "admin"){
 			//Will be able to delet all the posts
@@ -264,8 +265,16 @@ function startUser(){
 				cross = '<span class="deletePost glyphicon glyphicon-remove" data-deletePost="'+posts[p].postID+'"></span>';
 			}
 		}
+		//See if the current user has already add a like to the post
+		if(posts[p].likes.length != 0){
+			for(var l=0; l<posts[p].likes.length; l++){
+				if( posts[p].likes[l] == users[indexCurrentUser].name+' '+users[indexCurrentUser].lastname ){
+					hand = ' ';
+				}
+			}
+		}
     	//post
-        $("ul#posts").prepend('<li id="'+posts[p].postID+'" class="singlePost jumbotron">'+cross+'<h4 class="postTitle">'+posts[p].postTitle+'</h4><div class="postContent">'+posts[p].postContent+'</div><div class="postActions"><span class="commentPost glyphicon glyphicon-edit" data-postidcomments="'+posts[p].postID+'"></span><p class="commentsNum">'+posts[p].comments.length+' comments</p><h5 style="float:right" class="postFrom">'+author+'</h5></div><ul class="comments" style="display:none"><li class="singleComment newComment" ><input type="text" class="form-control" id="inputNewCommentFromPost'+posts[p].postID+'" placeholder="Comment"><button data-commentid="'+posts[p].comments.length+'" data-postid="'+posts[p].postID+'" class="btn btn-primary btn-lg btnNewComment">Comment</button></li></ul></li>');
+        $("ul#posts").prepend('<li id="'+posts[p].postID+'" class="singlePost jumbotron">'+cross+'<h4 class="postTitle">'+posts[p].postTitle+'</h4><div class="postContent">'+posts[p].postContent+'</div><div class="postActions"><span class="commentPost glyphicon glyphicon-edit" data-postidcomments="'+posts[p].postID+'"></span><p class="commentsNum">'+posts[p].comments.length+' comments</p><span class="seeLikes glyphicon glyphicon-thumbs-up" data-postidlikes="'+posts[p].postID+'"></span><p class="likesNum">'+posts[p].likes.length+' likes</p><h5 style="float:right" class="postFrom">'+author+'</h5></div><ul class="comments" style="display:none"><li class="singleComment newComment" ><input type="text" class="form-control" id="inputNewCommentFromPost'+posts[p].postID+'" placeholder="Comment"><button data-commentid="'+posts[p].comments.length+'" data-postid="'+posts[p].postID+'" class="btn btn-primary btn-lg btnNewComment">Comment</button></li></ul><ul class="likes" style="display:none">'+hand+'</ul></li>');
         //Comments
         for(var c=0; c<posts[p].comments.length; c++){
         	var authorComment = posts[p].comments[c].commentAuthor ;
@@ -303,6 +312,14 @@ function startUser(){
 				}
 			}        
     	    $("ul#posts li#"+posts[p].postID+" ul.comments li.newComment").before("<li class='singleComment' id='"+posts[p].comments[c].commentID+"'>"+crossComment+"<p class='commentContent'>"+posts[p].comments[c].commentContent+"</p><div class='commentInfo'><p class='commentAuthor'>"+authorComment+"</p><p class='commentDate'>"+posts[p].comments[c].commentDate+"</p></div></li>");
+        }
+        //Likes
+        for(var l=0; l<posts[p].likes.length; l++){
+        	var nameLike = posts[p].likes[l];
+        	if( posts[p].likes[l] == users[indexCurrentUser].name+' '+users[indexCurrentUser].lastname ){
+				nameLike = 'You';
+			}
+	        $("ul#posts li#"+posts[p].postID+" ul.likes").append('<li class="singleLike">'+nameLike+'</li>');
         }
     }
 	//Users/Friends List
@@ -374,7 +391,7 @@ function startUser(){
 	}
 }
 
-//SEE POSTS (from the lastest post in home page)
+//SEE POST COMMENTS (from the lastest post in home page)
 $(document).on("click", "span.seePosts", function(){
 	//We first go to the Wall page
  	 $(".MyPage").css({"display":"none"});
@@ -384,6 +401,18 @@ $(document).on("click", "span.seePosts", function(){
      //We slide the comments of the post we've clicked
      var postid = $(this).attr("data-postid");
 	 $("li#"+postid+" ul.comments").slideToggle();
+});
+
+//SEE POST LIKES
+$(document).on("click", "span.seePostLikes", function(){
+	//We first go to the Wall page
+	$(".MyPage").css({"display":"none"});
+	$('*[data-page="Wall"]').fadeIn("slow");
+	$(".MyLink").removeClass("active");
+	$('*[data-link="Wall"]').addClass("active");
+	//We slide the likes of the post we've clicked
+	var postid = $(this).attr("data-postid");
+	$("li#"+postid+" ul.likes").slideToggle();
 });
 
 //OPEN MESSAGE (from lastest messages in home page)
@@ -410,9 +439,9 @@ function newPost(){
 	var lastPostIndex = (posts.length) - 1;
 	var newPostId = parseInt( posts[lastPostIndex].postID ) + 1;
 	//We add the new post to the wall
-	$("ul#posts").prepend('<li id="'+newPostId+'" class="singlePost jumbotron"><span class="deletePost glyphicon glyphicon-remove" data-deletePost="'+newPostId+'"></span><h4 class="postTitle">'+postTitle.value+'</h4><div class="postContent">'+postContent.value+'</div><div class="postActions"><span class="commentPost glyphicon glyphicon-edit" data-postidcomments="'+newPostId+'"></span><p class="commentsNum">0 comments</p><h5 style="float:right" class="postFrom"></h5></div><ul class="comments" style="display:none"><li class="singleComment newComment"><input type="text" class="form-control" id="inputNewCommentFromPost'+newPostId+'" placeholder="Comment"><button data-commentid="0" data-postid="'+newPostId+'" class="btn btn-primary btn-lg btnNewComment">Comment</button></li></ul></li>');
+	$("ul#posts").prepend('<li id="'+newPostId+'" class="singlePost jumbotron"><span class="deletePost glyphicon glyphicon-remove" data-deletePost="'+newPostId+'"></span><h4 class="postTitle">'+postTitle.value+'</h4><div class="postContent">'+postContent.value+'</div><div class="postActions"><span class="commentPost glyphicon glyphicon-edit" data-postidcomments="'+newPostId+'"></span><p class="commentsNum">0 comments</p><span class="seeLikes glyphicon glyphicon-thumbs-up" data-postidlikes="'+newPostId+'"></span><p class="likesNum">0 likes</p><h5 style="float:right" class="postFrom"></h5></div><ul class="comments" style="display:none"><li class="singleComment newComment"><input type="text" class="form-control" id="inputNewCommentFromPost'+newPostId+'" placeholder="Comment"><button data-commentid="0" data-postid="'+newPostId+'" class="btn btn-primary btn-lg btnNewComment">Comment</button></li></ul><ul class="likes" style="display:none"><li><span class="likePost glyphicon glyphicon-thumbs-up" data-indexpostidlike="'+posts.length+'"></span></li></ul></li>');
 	//And we save it into the array
-	posts.push({ "postID": newPostId, "postAuthor":users[indexCurrentUser].name+' '+users[indexCurrentUser].lastname, "postTitle":postTitle.value , "postContent": postContent.value, "comments":[], "postDate":completeDate() });
+	posts.push({ "postID": newPostId, "postAuthor":users[indexCurrentUser].name+' '+users[indexCurrentUser].lastname, "postTitle":postTitle.value , "postContent": postContent.value, "comments":[], "postDate":completeDate(), 'likes':[] });
 	//We save it into localStorage
 	var jsonString =  JSON.stringify(posts);
 	localStorage.setItem("aPosts",jsonString);
@@ -439,6 +468,25 @@ $(document).on("click", "span.deletePost", function(){
 	ownPosts-=1;
 	$('#homeProfile .homePosts').text( ownPosts +' posts');
 	console.log(ownPosts);});
+
+//SLIDE LIKES
+$(document).on("click", "span.seeLikes", function(){
+	var postidlikes = $(this).attr("data-postidlikes");
+	$("li#"+postidlikes+" ul.likes").slideToggle();
+});
+
+//ADD LIKE
+$(document).on("click", "span.likePost", function(){
+	var indexpostidlike = $(this).attr("data-indexpostidlike");
+	console.log(indexpostidlike);
+	$('li#'+posts[indexpostidlike].postID+' p.likesNum').text((posts[indexpostidlike].likes.length+1)+' likes');
+	$('li#'+posts[indexpostidlike].postID+' ul.likes').append('<li class="singleLike">You</li>');
+	$(this).remove();
+	posts[indexpostidlike].likes.push(users[indexCurrentUser].name+' '+users[indexCurrentUser].lastname);
+	//We save it into localStorage
+	var jsonString =  JSON.stringify(posts);
+	localStorage.setItem("aPosts",jsonString);
+});
 
 //SLIDE COMMENTS
 $(document).on("click", "span.commentPost", function(){
